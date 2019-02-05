@@ -11,7 +11,7 @@ class SpinLockDemo
     //      Default SpinLock construction ()
     //      SpinLock.Enter(ref bool)
     //      SpinLock.Exit()
-    static void SpinLockSample1()
+    public static void SpinLockSample1()
     {
         SpinLock sl = new SpinLock();
 
@@ -55,7 +55,7 @@ class SpinLockDemo
     //      SpinLock.IsHeld
     //      SpinLock.IsHeldByCurrentThread
     //      SpinLock.IsThreadOwnerTrackingEnabled
-    static void SpinLockSample2()
+    public static void SpinLockSample2()
     {
         // Instantiate a SpinLock
         SpinLock sl = new SpinLock();
@@ -114,7 +114,7 @@ class SpinLockDemo
 
     // Demonstrates:
     //      SpinLock constructor(false) -- thread ownership not tracked
-    static void SpinLockSample3()
+    public static void SpinLockSample3()
     {
         // Create SpinLock that does not track ownership/threadIDs
         SpinLock sl = new SpinLock(false);

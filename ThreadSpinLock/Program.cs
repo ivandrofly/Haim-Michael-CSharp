@@ -10,6 +10,7 @@ namespace ThreadSpinLock
     {
         static void Main(string[] args)
         {
+            SpinLockDemo.SpinLockSample1();
         }
     }
 }
