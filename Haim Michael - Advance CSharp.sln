@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28527.54
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaphore Demo", "Semaphore Demo\Semaphore Demo.csproj", "{8A86227D-FE52-4BE0-AD11-88035067FE7E}"
 EndProject
@@ -116,6 +116,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contravariance", "Contravariance\Contravariance.csproj", "{394769C2-FF68-43A6-83DE-3ECBC0318B90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covariance", "Covariance\Covariance.csproj", "{0C2AFDD2-4550-4DE1-B674-781B58387DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSpinLock", "ThreadSpinLock\ThreadSpinLock.csproj", "{CADD0B2A-B5AA-4D98-93F5-EC68526478DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -323,6 +325,10 @@ Global
 		{0C2AFDD2-4550-4DE1-B674-781B58387DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C2AFDD2-4550-4DE1-B674-781B58387DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C2AFDD2-4550-4DE1-B674-781B58387DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADD0B2A-B5AA-4D98-93F5-EC68526478DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADD0B2A-B5AA-4D98-93F5-EC68526478DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADD0B2A-B5AA-4D98-93F5-EC68526478DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADD0B2A-B5AA-4D98-93F5-EC68526478DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -376,5 +382,9 @@ Global
 		{30FCAF2F-2D08-4A81-9190-7CD4A52D0D08} = {B2B85206-4399-4DC3-9E9B-66BB11AF46EC}
 		{394769C2-FF68-43A6-83DE-3ECBC0318B90} = {B2B85206-4399-4DC3-9E9B-66BB11AF46EC}
 		{0C2AFDD2-4550-4DE1-B674-781B58387DDD} = {B2B85206-4399-4DC3-9E9B-66BB11AF46EC}
+		{CADD0B2A-B5AA-4D98-93F5-EC68526478DD} = {582C14F7-8C6D-460E-B807-D24F19E298AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1C75220-2406-4274-BAFF-A1B9309922F3}
 	EndGlobalSection
 EndGlobal
