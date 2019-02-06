@@ -29,12 +29,26 @@ class SpinLockDemo
                 try
                 {
                     sl.Enter(ref gotLock);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"{Thread.CurrentThread.ManagedThreadId} - Acquire lock");
+                    Console.ResetColor();
+                    Thread.Sleep(1000 * 3);
                     sb.Append((i % 10).ToString());
                 }
                 finally
                 {
                     // Only give up the lock if you actually acquired it
-                    if (gotLock) sl.Exit();
+                    if (gotLock)
+                    {
+                        sl.Exit();
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine($"{Thread.CurrentThread.ManagedThreadId} - releases lock");
+                        Console.ResetColor();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Lock not acquired!");
+                    }
                 }
             }
         };

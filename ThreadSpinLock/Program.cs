@@ -11,6 +11,9 @@ namespace ThreadSpinLock
         static void Main(string[] args)
         {
             SpinLockDemo.SpinLockSample1();
+
+            Console.WriteLine("done");
+            Console.ReadLine();
         }
     }
 }
